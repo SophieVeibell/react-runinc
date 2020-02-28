@@ -1,0 +1,42 @@
+@import '../../../globalStyles/variabler';
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+header {
+
+    width: 100%;
+}
+
+
+
+
+
+.logo {display: none;}
+
+@media only screen and (min-width:960px){
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 120px 10px 10px;
+    height: 100px;
+
+    .logo {
+        display: block;
+        width: 400px;
+
+            img {
+            width: 100%;
+            height: auto;
+            }
+
+    }
+
+}
+
+}

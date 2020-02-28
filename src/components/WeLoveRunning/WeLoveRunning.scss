@@ -1,0 +1,75 @@
+@import '../../globalStyles/variabler';
+@import '../../globalStyles/mixins/';
+//@Blackbanner
+
+.WeLoveRunningSection {
+
+    .hero-picture {
+        width: 100%;
+        object-fit: cover;
+
+        img {
+            width: 100%;
+            height: auto;
+
+        }
+    }
+
+    .hero-banner {
+        object-fit: cover;
+        
+        @include Blackbanner;
+
+        h2 {
+            color: white;
+            margin-top: 8px;
+            display:inline-block;
+            font-weight: bold;
+            
+            
+        }
+
+        span {
+            color: $searchbarcolor;        
+        }
+    }
+}
+
+
+// desktop 
+
+@media only screen and (min-width:960px){
+
+    .WeLoveRunningSection {
+    
+
+        .hero-picture {
+            position: relative;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        .hero-banner {
+            position: absolute;
+            width: 950px;
+            height: 95px;
+            z-index:50000;
+            right: 0;
+            top:70%;
+            text-align: left;
+            padding: 10px;
+            font-weight: bold;
+
+            h2, span {
+                font-size: 2.8em;
+                
+            }
+
+        }
+
+        }
+
+}

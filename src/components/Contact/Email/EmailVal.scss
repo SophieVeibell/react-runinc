@@ -1,0 +1,105 @@
+@import '../../../globalStyles/_variabler';
+@import '../../../globalStyles/mixins';
+
+.email-val {
+    text-align: center;
+    padding: 20px;
+
+
+    h5 {
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+
+    form {
+
+        input {
+            width: 70%;
+            height: 30px;
+            margin: 5px auto;
+            @include input-text;
+        }
+
+        textarea {
+        resize: vertical;
+        @include input-text;
+        width: 70%;
+
+        }
+    }
+
+    .contact-button {
+
+        input[type=submit] {
+            height: 40px;
+            width: 70%;
+            margin-top: 20px;
+            @include buttonColor-noBorder;
+        }
+       
+       
+    }
+
+
+
+}
+
+@media only screen and (min-width:960px){
+
+    .email-val{
+        grid-column: 2/-1;
+        grid-row: 1/ span 2;
+
+        text-align: left;
+        margin: 200px 0 0 150px;
+        width: 397px;
+        text-transform: uppercase;
+
+
+        h5 {
+            font-size: 2em;
+            
+        }
+
+        form {
+
+            input[type=text], [type=email] {
+            width: 250px;
+            padding: 0px 10px;
+            margin-bottom: 20px;
+            }
+
+            p {
+                font-weight: bold;
+            }
+
+            textarea {
+            height: 70px;
+            padding:10px 10px;
+
+            }
+
+            .contact-button {
+                width: 130px;
+
+                input[type=submit]{
+                font-size: 0.7em;
+                height:30px;
+            }
+
+            
+            
+        }
+
+
+
+
+
+        }
+        
+
+        
+        
+    }
+
+}

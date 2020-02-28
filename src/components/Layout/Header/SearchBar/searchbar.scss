@@ -1,0 +1,42 @@
+@import '../../../../globalStyles/variabler';
+@import '../../../../globalStyles/mixins';
+
+
+.search_bar {
+    padding: 5px 10px;
+
+    input[type=search]{
+        width: 75%;
+        height: 45px;
+        border: 2px solid black;
+        background-color: $searchbarcolor;
+        @include input-text;
+        float: left;
+
+        font-size: 16px;
+        padding: 10px;
+        font-family: Raleway;
+
+    }
+
+    input[type=submit]{
+       width: 25%;
+       height: 45px;
+       border: none;
+       background-color: black;
+       color: white;
+       font-weight: bold;
+        text-transform: uppercase;
+       
+
+    }
+}
+
+
+@media only screen and (min-width:960px){
+.search_bar {
+    width: 550px;
+
+}
+
+}

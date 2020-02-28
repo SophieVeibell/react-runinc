@@ -1,0 +1,118 @@
+@import '../../globalStyles/variabler';
+@import '../../globalStyles/mixins';
+
+
+.ShopShoesSection {
+   
+
+    .shop-banner {
+        object-fit: cover;
+        @include Blackbanner;
+        height: 50px;
+
+        h2 {
+            color: white;
+            margin-top: 8px;
+            display:inline-block;
+        }
+
+    }
+
+        .shop-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows:1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-row-gap: 20px;
+        padding: 20px;
+        }
+
+        .shoeshop {
+            @include Shoegrid;
+        }
+
+    .runnincshop {
+        @include yellowbanner;
+
+    }
+}
+
+
+@media only screen and (min-width:960px){
+
+    .ShopShoesSection {
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+        grid-template-rows: 1fr;
+        
+        position: relative;
+
+    .runnincshop {
+        grid-column: 1/2;
+        grid-row:1/span 2;
+    }
+
+    .runnincshop-text {
+        text-align: left;
+        padding-top: 80px;
+
+        h3 {
+            font-size: 2.6em;
+            margin-bottom: 30px;
+        }
+
+        h4 {
+            font-size: 1.7em
+        }
+
+        h5 {
+            font-size: 1em;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+
+        p {
+            font-size: 0.9em;
+            
+        }
+    }
+
+    .shop-grid {
+        display: flex;
+        margin-top: 200px;
+        justify-content: flex-start;
+        flex-flow: row wrap;
+        padding: 10px;
+        width: 70%;
+        margin:200px auto 0;  
+    }
+
+    .shoeshop {
+        max-width: 250px;
+        margin: 10px;
+        padding: 0 30px;
+        
+        
+    }
+    .shop-banner {
+        position: absolute;
+        right: 0;
+        top:13%;
+
+        width: 350px;
+        height: 95px;
+        text-align: left;
+
+
+        h2 {
+            font-size: 2.8em;
+            padding: 10px;
+            
+        }
+        
+    }
+
+
+
+}
+
+}

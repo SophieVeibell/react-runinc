@@ -1,0 +1,55 @@
+@import '../../globalStyles/variabler';
+@import '../../globalStyles/mixins';
+
+.contactsection {
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        .contact-banner {
+            @include Blackbanner;
+            background-color: $searchbarcolor;
+            height: 50px;
+
+            h2 {
+                padding-top: 15px;
+            }
+        }
+}
+
+@media only screen and (min-width:960px){
+
+    .contactsection {
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows:2fr 1fr;
+
+        .contact-map{
+            grid-column: 1/2;
+            grid-row:1/2;
+            position: relative;
+            
+
+            .contact-banner{
+                position: absolute;
+                left: 0;
+                top: 50%;
+                width: 550px;
+                font-size: 3em;
+                height: 70px;
+                font-weight: bold;
+                text-align: right;
+                padding-right: 10px;
+                
+
+            }
+        }
+
+        footer {
+            grid-column: 1/2;
+            grid-row:2/-1;
+        }
+    }
+}

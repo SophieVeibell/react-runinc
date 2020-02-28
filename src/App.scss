@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+$Textfont: 'Raleway';
+
+body{
+    font-family: $Textfont;
+
+    img {
+        display: block;
+    }
+}
